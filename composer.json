@@ -1,0 +1,29 @@
+{
+    "name": "lunar-extend/sitemap",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Rafal Morawiec",
+            "email": "rafal.morawiec@fibloo.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "lunarphp/lunar": "^0.6.0",
+        "lunar-extend/stub": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LunarExtend\\Sitemap\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LunarExtend\\Sitemap\\SitemapServiceProvider"
+            ]
+        }
+    }
+}
